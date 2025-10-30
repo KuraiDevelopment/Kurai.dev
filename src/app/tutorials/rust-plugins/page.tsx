@@ -60,7 +60,7 @@ export default function RustPluginsTutorial() {
             </ul>
             
             <h3 className="text-xl font-semibold text-discord-yellow mb-4">Setting Up Development Environment</h3>
-            <div className="bg-gray-900/50 p-4 rounded-lg mb-4">
+            <div className="bg-gray-900/50 p-4 rounded-lg mb-4 overflow-x-auto">
               <code className="text-yellow-400 text-sm whitespace-pre">
 {`# Download required DLLs from your server
 /rust_server/RustDedicated_Data/Managed/
@@ -91,7 +91,7 @@ export default function RustPluginsTutorial() {
           <div className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700">
             <h3 className="text-xl font-semibold text-discord-blurple mb-4">Plugin Structure Overview</h3>
             
-            <div className="bg-gray-900/50 p-4 rounded-lg mb-4">
+            <div className="bg-gray-900/50 p-4 rounded-lg mb-4 overflow-x-auto">
               <code className="text-blue-400 text-sm whitespace-pre">
 {`using Oxide.Core;
 using Oxide.Core.Plugins;
@@ -139,7 +139,7 @@ namespace Oxide.Plugins
           <div className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700">
             <h3 className="text-xl font-semibold text-discord-fuchsia mb-4">Welcome Message Plugin</h3>
             
-            <div className="bg-gray-900/50 p-4 rounded-lg mb-4">
+            <div className="bg-gray-900/50 p-4 rounded-lg mb-4 overflow-x-auto">
               <code className="text-pink-400 text-sm whitespace-pre">
 {`using System;
 using Oxide.Core;
@@ -232,7 +232,7 @@ namespace Oxide.Plugins
             <div className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700">
               <h3 className="text-xl font-semibold text-discord-green mb-4">Basic Chat Commands</h3>
               
-              <div className="bg-gray-900/50 p-4 rounded-lg">
+              <div className="bg-gray-900/50 p-4 rounded-lg overflow-x-auto">
                 <code className="text-green-400 text-sm whitespace-pre">
 {`[ChatCommand("info")]
 void InfoCommand(BasePlayer player, string command, string[] args)
@@ -303,7 +303,7 @@ private void SaveKitData(BasePlayer player)
             <div className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700">
               <h3 className="text-xl font-semibold text-discord-yellow mb-4">Advanced Commands with Permissions</h3>
               
-              <div className="bg-gray-900/50 p-4 rounded-lg">
+              <div className="bg-gray-900/50 p-4 rounded-lg overflow-x-auto">
                 <code className="text-yellow-400 text-sm whitespace-pre">
 {`// Define permissions in Init()
 void Init()
@@ -393,7 +393,7 @@ private BasePlayer FindPlayer(string nameOrId)
           <div className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700">
             <h3 className="text-xl font-semibold text-discord-blurple mb-4">Common Rust Events</h3>
             
-            <div className="bg-gray-900/50 p-4 rounded-lg">
+            <div className="bg-gray-900/50 p-4 rounded-lg overflow-x-auto">
               <code className="text-blue-400 text-sm whitespace-pre">
 {`// Player events
 void OnPlayerConnected(BasePlayer player)
@@ -511,7 +511,7 @@ private bool ContainsBadWords(string message)
           <div className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700">
             <h3 className="text-xl font-semibold text-discord-fuchsia mb-4">Persistent Data Management</h3>
             
-            <div className="bg-gray-900/50 p-4 rounded-lg mb-4">
+            <div className="bg-gray-900/50 p-4 rounded-lg mb-4 overflow-x-auto">
               <code className="text-pink-400 text-sm whitespace-pre">
 {`// Data classes
 public class PlayerData
@@ -638,7 +638,7 @@ void StatsCommand(BasePlayer player, string command, string[] args)
             <div className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700">
               <h3 className="text-xl font-semibold text-discord-green mb-4">Timers and Scheduled Tasks</h3>
               
-              <div className="bg-gray-900/50 p-4 rounded-lg">
+              <div className="bg-gray-900/50 p-4 rounded-lg overflow-x-auto">
                 <code className="text-green-400 text-sm whitespace-pre">
 {`// Timer examples
 private Timer broadcastTimer;
@@ -694,7 +694,7 @@ void TeleportRequestCommand(BasePlayer player, string command, string[] args)
             <div className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700">
               <h3 className="text-xl font-semibold text-discord-yellow mb-4">Web API Integration</h3>
               
-              <div className="bg-gray-900/50 p-4 rounded-lg">
+              <div className="bg-gray-900/50 p-4 rounded-lg overflow-x-auto">
                 <code className="text-yellow-400 text-sm whitespace-pre">
 {`// Discord webhook integration
 private void SendDiscordMessage(string message)

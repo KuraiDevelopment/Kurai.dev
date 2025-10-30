@@ -23,7 +23,7 @@ export default function DayZServersPage() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700">
               <h3 className="text-xl font-semibold text-discord-green mb-4">1. Server Installation</h3>
-              <div className="bg-gray-900/50 p-4 rounded-lg mb-4">
+              <div className="bg-gray-900/50 p-4 rounded-lg mb-4 overflow-x-auto">
                 <code className="text-green-400 text-sm">
                   # Download SteamCMD<br/>
                   steamcmd +login anonymous +force_install_dir ./DayZServer +app_update 223350 +quit<br/>
@@ -37,7 +37,7 @@ export default function DayZServersPage() {
 
             <div className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700">
               <h3 className="text-xl font-semibold text-discord-yellow mb-4">2. Server Configuration</h3>
-              <div className="bg-gray-900/50 p-4 rounded-lg mb-4">
+              <div className="bg-gray-900/50 p-4 rounded-lg mb-4 overflow-x-auto">
                 <code className="text-yellow-400 text-sm">
                   hostname = &quot;Kurai.Dev DayZ Server&quot;;<br/>
                   password = &quot;&quot;;<br/>

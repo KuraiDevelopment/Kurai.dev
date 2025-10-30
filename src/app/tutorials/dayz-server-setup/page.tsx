@@ -101,7 +101,7 @@ export default function DayZServerSetupTutorial() {
           {/* Linux Installation */}
           <div className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700">
             <h3 className="text-xl font-semibold text-discord-green mb-4">Linux Installation</h3>
-            <div className="bg-gray-900/50 p-4 rounded-lg">
+            <div className="bg-gray-900/50 p-4 rounded-lg overflow-x-auto">
               <code className="text-green-400 text-sm whitespace-pre">
 {`# Update system
 sudo apt update && sudo apt upgrade -y
@@ -136,7 +136,7 @@ tar -xvzf steamcmd_linux.tar.gz
               Use SteamCMD to download the DayZ Dedicated Server files:
             </p>
             
-            <div className="bg-gray-900/50 p-4 rounded-lg mb-4">
+            <div className="bg-gray-900/50 p-4 rounded-lg mb-4 overflow-x-auto">
               <code className="text-yellow-400 text-sm whitespace-pre">
 {`# Windows
 steamcmd.exe +login anonymous +force_install_dir "C:\\DayZServer" +app_update 223350 +quit
@@ -165,7 +165,7 @@ steamcmd.exe +login anonymous +force_install_dir "C:\\DayZServer" +app_update 22
               Create a configuration file in your server directory:
             </p>
             
-            <div className="bg-gray-900/50 p-4 rounded-lg">
+            <div className="bg-gray-900/50 p-4 rounded-lg overflow-x-auto">
               <code className="text-pink-400 text-sm whitespace-pre">
 {`hostname = "Kurai.Dev DayZ Server - [Vanilla/PvP]";
 password = "";
@@ -252,7 +252,7 @@ steamcmd.exe +login anonymous +workshop_download_item 221100 1710977250 +quit  #
             <div className="mb-6">
               <h4 className="font-semibold text-white mb-3">2. Create Mod Keys Folder</h4>
               <p className="text-gray-300 text-sm mb-2">Copy .bikey files from each mod to your server keys folder:</p>
-              <div className="bg-gray-900/50 p-4 rounded-lg">
+              <div className="bg-gray-900/50 p-4 rounded-lg overflow-x-auto">
                 <code className="text-yellow-400 text-sm">
                   DayZServer/keys/
                 </code>
@@ -261,7 +261,7 @@ steamcmd.exe +login anonymous +workshop_download_item 221100 1710977250 +quit  #
 
             <div>
               <h4 className="font-semibold text-white mb-3">3. Update Startup Parameters</h4>
-              <div className="bg-gray-900/50 p-4 rounded-lg">
+              <div className="bg-gray-900/50 p-4 rounded-lg overflow-x-auto">
                 <code className="text-blue-400 text-sm whitespace-pre">
 {`DayZServer_x64.exe -config=serverDZ.cfg -port=2302 -profiles=ServerProfile -dologs -adminlog -netlog -freezecheck "-mod=@CF;@Trader;@BBP"`}
                 </code>
@@ -279,7 +279,7 @@ steamcmd.exe +login anonymous +workshop_download_item 221100 1710977250 +quit  #
             
             <div className="mb-6">
               <h4 className="font-semibold text-white mb-3">Windows Batch File (start_server.bat)</h4>
-              <div className="bg-gray-900/50 p-4 rounded-lg">
+              <div className="bg-gray-900/50 p-4 rounded-lg overflow-x-auto">
                 <code className="text-blue-400 text-sm whitespace-pre">
 {`@echo off
 title Kurai.Dev DayZ Server
@@ -295,7 +295,7 @@ pause`}
 
             <div>
               <h4 className="font-semibold text-white mb-3">Linux Start Script (start_server.sh)</h4>
-              <div className="bg-gray-900/50 p-4 rounded-lg">
+              <div className="bg-gray-900/50 p-4 rounded-lg overflow-x-auto">
                 <code className="text-green-400 text-sm whitespace-pre">
 {`#!/bin/bash
 echo "Starting DayZ Server..."

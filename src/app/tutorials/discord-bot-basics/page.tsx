@@ -60,7 +60,7 @@ export default function DiscordBotBasicsTutorial() {
             </ul>
             
             <h3 className="text-xl font-semibold text-discord-green mb-4">Check Your Installation</h3>
-            <div className="bg-gray-900/50 p-4 rounded-lg">
+            <div className="bg-gray-900/50 p-4 rounded-lg overflow-x-auto">
               <code className="text-green-400 text-sm whitespace-pre">
 {`# Check Node.js version
 node --version
@@ -142,7 +142,7 @@ npm --version
             <div className="space-y-4">
               <div>
                 <h4 className="font-semibold text-white mb-2">1. Create Project Directory</h4>
-                <div className="bg-gray-900/50 p-4 rounded-lg">
+                <div className="bg-gray-900/50 p-4 rounded-lg overflow-x-auto">
                   <code className="text-pink-400 text-sm whitespace-pre">
 {`mkdir my-discord-bot
 cd my-discord-bot
@@ -153,7 +153,7 @@ npm init -y`}
 
               <div>
                 <h4 className="font-semibold text-white mb-2">2. Install Dependencies</h4>
-                <div className="bg-gray-900/50 p-4 rounded-lg">
+                <div className="bg-gray-900/50 p-4 rounded-lg overflow-x-auto">
                   <code className="text-blue-400 text-sm whitespace-pre">
 {`# Install Discord.js
 npm install discord.js
@@ -169,7 +169,7 @@ npm install --save-dev nodemon`}
 
               <div>
                 <h4 className="font-semibold text-white mb-2">3. Create Project Structure</h4>
-                <div className="bg-gray-900/50 p-4 rounded-lg">
+                <div className="bg-gray-900/50 p-4 rounded-lg overflow-x-auto">
                   <code className="text-green-400 text-sm whitespace-pre">
 {`my-discord-bot/
 ├── commands/
@@ -185,7 +185,7 @@ npm install --save-dev nodemon`}
               <div>
                 <h4 className="font-semibold text-white mb-2">4. Create Environment File</h4>
                 <p className="text-gray-300 text-sm mb-2">Create <code>.env</code> file in your project root:</p>
-                <div className="bg-gray-900/50 p-4 rounded-lg">
+                <div className="bg-gray-900/50 p-4 rounded-lg overflow-x-auto">
                   <code className="text-yellow-400 text-sm">
                     TOKEN=your_bot_token_here<br/>
                     CLIENT_ID=your_client_id_here<br/>
@@ -204,7 +204,7 @@ npm install --save-dev nodemon`}
           <div className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700">
             <h3 className="text-xl font-semibold text-discord-green mb-4">Create Your First Bot (index.js)</h3>
             
-            <div className="bg-gray-900/50 p-4 rounded-lg mb-4">
+            <div className="bg-gray-900/50 p-4 rounded-lg mb-4 overflow-x-auto">
               <code className="text-green-400 text-sm whitespace-pre">
 {`const { Client, GatewayIntentBits, Events } = require('discord.js');
 require('dotenv').config();
@@ -279,7 +279,7 @@ client.login(process.env.TOKEN);`}
 
             <div>
               <h4 className="font-semibold text-white mb-2">Update package.json Scripts</h4>
-              <div className="bg-gray-900/50 p-4 rounded-lg">
+              <div className="bg-gray-900/50 p-4 rounded-lg overflow-x-auto">
                 <code className="text-blue-400 text-sm whitespace-pre">
 {`"scripts": {
     "start": "node index.js",
@@ -300,7 +300,7 @@ client.login(process.env.TOKEN);`}
             <div className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700">
               <h3 className="text-xl font-semibold text-discord-blurple mb-4">Command Registration (deploy-commands.js)</h3>
               
-              <div className="bg-gray-900/50 p-4 rounded-lg">
+              <div className="bg-gray-900/50 p-4 rounded-lg overflow-x-auto">
                 <code className="text-blue-400 text-sm whitespace-pre">
 {`const { REST, Routes, SlashCommandBuilder } = require('discord.js');
 require('dotenv').config();
@@ -361,7 +361,7 @@ const rest = new REST().setToken(process.env.TOKEN);
             <div className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700">
               <h3 className="text-xl font-semibold text-discord-yellow mb-4">Command Handling (Add to index.js)</h3>
               
-              <div className="bg-gray-900/50 p-4 rounded-lg">
+              <div className="bg-gray-900/50 p-4 rounded-lg overflow-x-auto">
                 <code className="text-yellow-400 text-sm whitespace-pre">
 {`// Add this to your index.js file
 client.on(Events.InteractionCreate, async interaction => {
@@ -466,7 +466,7 @@ client.on(Events.InteractionCreate, async interaction => {
           <div className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700">
             <h3 className="text-xl font-semibold text-discord-fuchsia mb-4">Advanced Event Handling</h3>
             
-            <div className="bg-gray-900/50 p-4 rounded-lg mb-4">
+            <div className="bg-gray-900/50 p-4 rounded-lg mb-4 overflow-x-auto">
               <code className="text-pink-400 text-sm whitespace-pre">
 {`// Member join event
 client.on(Events.GuildMemberAdd, member => {
@@ -553,8 +553,8 @@ client.on(Events.MessageReactionAdd, async (reaction, user) => {
                 
                 <li>
                   <strong>3. Invite Bot to Server:</strong>
-                  <div className="bg-gray-900/50 p-3 rounded-lg mt-2">
-                    <code className="text-blue-400 text-sm">
+                  <div className="bg-gray-900/50 p-3 rounded-lg mt-2 overflow-x-auto">
+                    <code className="text-blue-400 text-sm break-all">
                       https://discord.com/api/oauth2/authorize?client_id=YOUR_CLIENT_ID&permissions=8&scope=bot%20applications.commands
                     </code>
                   </div>
