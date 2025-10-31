@@ -21,7 +21,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-xl font-bold text-discord-blurple mb-4">Kurai.Dev</h3>
             <p className="text-gray-300 mb-4">
@@ -42,33 +42,22 @@ export default function Footer() {
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">Game Servers</h4>
-            <ul className="space-y-2">
-              <li><Link href="/tutorials/dayz-server-setup" className="text-gray-300 hover:text-white transition-colors">DayZ Setup Guide</Link></li>
-              <li><Link href="/dayz-servers" className="text-gray-300 hover:text-white transition-colors">DayZ Mods & Scripts</Link></li>
-              <li><Link href="/rust-servers" className="text-gray-300 hover:text-white transition-colors">Rust Server Config</Link></li>
-              <li><Link href="/tutorials" className="text-gray-300 hover:text-white transition-colors">Server Optimization</Link></li>
-            </ul>
+            <h4 className="text-lg font-semibold text-white mb-4">Quick Links</h4>
+            <div className="grid grid-cols-2 gap-x-6 gap-y-2">
+              <Link href="/dayz-servers" className="text-gray-300 hover:text-white transition-colors text-sm">DayZ Servers</Link>
+              <Link href="/discord-bots" className="text-gray-300 hover:text-white transition-colors text-sm">Discord Bots</Link>
+              <Link href="/rust-servers" className="text-gray-300 hover:text-white transition-colors text-sm">Rust Servers</Link>
+              <Link href="/tutorials" className="text-gray-300 hover:text-white transition-colors text-sm">Tutorials</Link>
+            </div>
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">Discord Development</h4>
-            <ul className="space-y-2">
-              <li><Link href="/tutorials/discord-bot-basics" className="text-gray-300 hover:text-white transition-colors">Bot Development</Link></li>
-              <li><Link href="/discord-bots" className="text-gray-300 hover:text-white transition-colors">Server Setup</Link></li>
-              <li><Link href="/discord-bots" className="text-gray-300 hover:text-white transition-colors">Moderation Tools</Link></li>
-              <li><Link href="/tutorials" className="text-gray-300 hover:text-white transition-colors">API Examples</Link></li>
-            </ul>
-          </div>
-          
-          <div>
-            <h4 className="text-lg font-semibold text-white mb-4">Support</h4>
-            <ul className="space-y-2">
-              <li><Link href="/tutorials" className="text-gray-300 hover:text-white transition-colors">Documentation</Link></li>
-              <li><Link href="/tutorials" className="text-gray-300 hover:text-white transition-colors">Guides & Tutorials</Link></li>
-              <li><Link href="/tutorials" className="text-gray-300 hover:text-white transition-colors">FAQ</Link></li>
-              <li><Link href="/tutorials" className="text-gray-300 hover:text-white transition-colors">Privacy Policy</Link></li>
-            </ul>
+            <h4 className="text-lg font-semibold text-white mb-4">Resources</h4>
+            <div className="grid grid-cols-1 gap-y-2">
+              <Link href="/tutorials" className="text-gray-300 hover:text-white transition-colors text-sm">Documentation</Link>
+              <Link href="/tutorials" className="text-gray-300 hover:text-white transition-colors text-sm">Guides</Link>
+              <Link href="/tutorials" className="text-gray-300 hover:text-white transition-colors text-sm">FAQ</Link>
+            </div>
           </div>
         </div>
         
