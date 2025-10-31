@@ -4,6 +4,23 @@ export default function Footer() {
   return (
     <footer className="bg-discord-darker border-t border-gray-700">
       <div className="container mx-auto px-4 py-8">
+        {/* Discord Widget Section */}
+        <div className="mb-8 text-center">
+          <h3 className="text-2xl font-bold text-discord-blurple mb-4">Join Our Community</h3>
+          <p className="text-gray-300 mb-6">Connect with other developers, get help, and stay updated!</p>
+          <div className="flex justify-center">
+            <iframe 
+              src="https://discord.com/widget?id=1427428229928452128&theme=dark" 
+              width="350" 
+              height="500" 
+              allowTransparency={true}
+              frameBorder="0" 
+              sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+              className="rounded-lg border border-gray-700"
+            />
+          </div>
+        </div>
+
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-xl font-bold text-discord-blurple mb-4">Kurai.Dev</h3>
