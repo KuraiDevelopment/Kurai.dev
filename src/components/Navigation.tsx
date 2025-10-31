@@ -33,9 +33,6 @@ export default function Navigation() {
               <Link href="/tutorials" className="text-gray-300 hover:text-white transition-colors">
                 Tutorials
               </Link>
-              <a href="https://discord.gg/4adcpdj6rF" target="_blank" rel="noopener noreferrer" className="bg-discord-blurple hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-lg transition-colors">
-                Join Discord
-              </a>
             </div>
           </div>
           
@@ -74,9 +71,6 @@ export default function Navigation() {
               <Link href="/tutorials" className="block text-gray-300 hover:text-white py-2">
                 Tutorials
               </Link>
-              <a href="https://discord.gg/4adcpdj6rF" target="_blank" rel="noopener noreferrer" className="w-full mt-2 bg-discord-blurple hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-lg transition-colors block text-center">
-                Join Discord
-              </a>
             </div>
           </div>
         )}
