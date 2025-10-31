@@ -64,9 +64,9 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold text-white mb-4">Support</h4>
             <ul className="space-y-2">
-              <li><a href="https://discord.gg/4adcpdj6rF" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">Help Center</a></li>
-              <li><a href="https://discord.gg/4adcpdj6rF" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">Contact Us</a></li>
-              <li><a href="https://discord.gg/4adcpdj6rF" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">Report Issues</a></li>
+              <li><Link href="/tutorials" className="text-gray-300 hover:text-white transition-colors">Documentation</Link></li>
+              <li><Link href="/tutorials" className="text-gray-300 hover:text-white transition-colors">Guides & Tutorials</Link></li>
+              <li><Link href="/tutorials" className="text-gray-300 hover:text-white transition-colors">FAQ</Link></li>
               <li><Link href="/tutorials" className="text-gray-300 hover:text-white transition-colors">Privacy Policy</Link></li>
             </ul>
           </div>
